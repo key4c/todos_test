@@ -1,26 +1,16 @@
-import logo from "./logo.svg";
-import "bulma/css/bulma.css";
-// import "./App.css";
+// import todos from "./todos";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <nav className="navbar is-ligth">
+        <div className="navbar-brand">
+          <span className="navbar-item is-uppercase">todos</span>
+        </div>
+      </nav>
+      <main className="content px-6 py-6">
+        <h1>Todoss</h1>
+      </main>
     </div>
   );
 }
-
-export default App;
