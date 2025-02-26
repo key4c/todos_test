@@ -13,6 +13,9 @@ export default function TodoList(props) {
                   className="button is-success"
                   title="выполнено"
                   disabled={item.done}
+                  onClick={() => {
+                    props.setDone(item.key);
+                  }}
                 >
                   ✅
                 </button>

@@ -3,6 +3,10 @@ import TodoList from "./TodoList";
 
 export default function App() {
   console.log(todos);
+  const setDone = (key) => {
+    const deed = todos.find((el) => el.key === key);
+    if (deed) deed.done = true;
+  };
   return (
     <div className="container">
       <nav className="navbar is-light">
